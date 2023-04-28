@@ -59,6 +59,8 @@ module.exports = {
             res
                 .cookie("access_token", tokenJwt, {
                     httpOnly: true,
+                    sameSite: 'none',
+                     secure: true
                 })
                 .status(200)
                 .json({
@@ -92,6 +94,8 @@ module.exports = {
             res
                 .cookie("access_token", tokenJwt, {
                     httpOnly: true,
+                    sameSite: 'none',
+                     secure: true
                 })
                 .status(200)
                 .json({
