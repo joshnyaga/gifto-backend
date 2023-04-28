@@ -17,8 +17,8 @@ app.use(bodyParser.json());
 app.disable('etag');    
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(cors({ credentials: true, origin: "https://gifto-frontend-two.vercel.app" }));
-app.options("*", cors({ credentials: true, origin: "https://gifto-frontend-two.vercel.app" }));
+app.use(cors({ credentials: true, origin: "https://gifto-frontend-two.vercel.app, http://localhost:3000" }));
+app.options("*", cors({ credentials: true, origin: "https://gifto-frontend-two.vercel.app,  http://localhost:3000" }));
 app.use(express.json());
 
 //routes

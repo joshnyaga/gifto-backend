@@ -8,7 +8,7 @@ router.get("/", getGifts);
 router.get("/picked", verifyToken, getGiftsPicked);
 router.get("/unpicked", getGiftsUnpicked);
 router.get("/:id", verifyToken, getGift);
-router.put("/:id", verifyToken, updateGift);
+router.put("/:id",  updateGift);
 router.delete("/:id", verifyToken,deleteGift );
 
 
