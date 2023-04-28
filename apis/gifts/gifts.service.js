@@ -11,6 +11,9 @@ const userSchema = new mongoose.Schema(
     img: {
       type: String,
     },
+    link: {
+      type:String,
+    },
     status:{
         type:String,
         default:"not picked"
